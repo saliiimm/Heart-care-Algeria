@@ -373,7 +373,6 @@ nav img:hover {
   background-color: transparent;
   border: 2px solid var(--tertiary-color);
   border-radius: 2rem;
-  color: var(--secondary-color);
   cursor: pointer;
   padding: 12px;
   text-align: center;
@@ -385,7 +384,16 @@ nav img:hover {
   width: 200px;
   will-change: transform;
 }
-.grid-button.light-mode {
+.grid-button a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  transition: all 0.3s;
+}
+.grid-button a:hover {
+  transition: all 0.3s;
+  font-size: 15px;
+}
+.grid-button a.light-mode {
   color: var(--primary-color);
 }
 
@@ -709,9 +717,6 @@ h3 {
   transition: all ease-in-out 0.3s;
   cursor: pointer;
 }
-.phone i:hover {
-  animation: sonne 0.05s infinite alternate;
-}
 .phone a {
   font-size: 19px;
 }
@@ -721,10 +726,9 @@ h3 {
     transform: scale(1.2);
   }
 }
-@keyframes beat {
-  to {
-    transform: scale(1.2);
-  }
+
+.sonnerie {
+  animation: sonne 0.05s infinite alternate;
 }
 @keyframes sonne {
   from {
@@ -734,6 +738,7 @@ h3 {
     transform: rotate(20deg);
   }
 }
+
 /*footer*/
 footer img,
 footer svg {
@@ -754,6 +759,9 @@ footer svg {
 }
 .partners {
   color: var(--primary-color);
+}
+.partners h2 {
+  color: var(--secondary-color);
 }
 .liens-utiles h2 {
   color: var(--secondary-color);
@@ -801,14 +809,15 @@ footer h5 {
 /* Modal Content/Box */
 .modal-content {
   position: relative;
-  background-color: var(--secondary-color);
+  background-color: white;
   margin: auto;
   border: 1px solid #888;
-  width: 60%;
-  height: auto;
+  width: 70%;
+  height: 300px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   animation-name: animatetop;
   animation-duration: 0.4s;
+  font-family: El Messiri;
 }
 @keyframes animatetop {
   from {
@@ -822,43 +831,92 @@ footer h5 {
 }
 /* Modal Header */
 .modal-header {
-  background-color: var(--tertiary-color);
-  color: var(--secondary-color);
-  display: flex;
-  align-items: center;
-  align-content: space-around;
-  text-align: center;
+  background-color: red;
+  color: white;
   width: 100%;
-  height: 20%;
+  height: 10%;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
 }
-
+.modal-header h2 {
+  margin-left: 5px;
+  font-size: 20px;
+}
 /* Modal Body */
 .modal-body {
-  background-color: var(--secondary-color);
+  background-color: white;
   color: rgb(185, 14, 14);
-  height: 60%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+}
+#btndonne {
+  list-style-type: none;
+  width: 70px;
+  height: 25px;
+  border: 2px solid red;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 5px;
+}
+#btndonne:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
 }
 
+#tbuser {
+  color: black;
+  border: 2px solid red;
+  height: 25px;
+  border-radius: 4px;
+}
+#output1 {
+  display: flex;
+  margin-left: 5px;
+  font-size: 18px;
+}
 /* Modal Footer */
 .modal-footer {
-  background-color: var(--tertiary-color);
-  color: var(--secondary-color);
-  height: 20%;
+  background-color: red;
+  color: white;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-footer img {
+  height: 28px;
+  margin-left: 5px;
+  animation: beat 0.3s infinite alternate;
+}
+@keyframes beat {
+  to {
+    transform: scale(1.2);
+  }
 }
 /* The Close Button */
 .close {
-  color: var(--secondary-color);
+  color: white;
   float: right;
   font-size: 28px;
   font-weight: bold;
   transition: all ease-in-out 0.3s;
+  display: block;
+  position: static;
   margin-right: 5px;
-  margin-bottom: 3px;
+  margin-top: -5px;
 }
 
 .close:hover,
 .close:focus {
-  color: var(--primary-color);
+  color: black;
   text-decoration: none;
   cursor: pointer;
   transform: scale(1.2);

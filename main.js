@@ -20,6 +20,18 @@ hiddenelements.forEach((el) => observer.observe(el));
 
 
 
+//phone shaking
+const phonediv=document.querySelector('.phone');
+const phoneitem=document.querySelector('.fa-phone')
+phonediv.addEventListener("mouseenter",function(){
+phoneitem.classList.add("sonnerie");
+})
+phonediv.addEventListener("mouseleave",function(){
+phoneitem.classList.remove("sonnerie");
+})
+
+
+
 //nav effect
 document.addEventListener("scroll",function (){
     let current = "";
@@ -31,6 +43,8 @@ document.addEventListener("scroll",function (){
           ul.classList.remove("active");        
 }
 })
+
+
 
 //scroll to the top button
 const showOnPx = 900;
@@ -52,7 +66,6 @@ backToTopButton.addEventListener("click", function (){
     behavior: "smooth",
   });
 })
-
 
 
 
@@ -114,6 +127,36 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+
+//don button
+const txt1=document.getElementById('tbuser');
+const btndon=document.getElementById('btndonne');
+const out1=document.getElementById('output1');
+
+function funcdon(){
+  if( txt1.value=='')
+  {out1.innerHTML='Veuillez insérer un montant!!!'}
+  else{
+  out1.innerHTML = `Merci infiniment pour votre don de `+txt1.value+ 'DA!<br>'+` Grace à vous,des operations du coeur pour personnes ayant des
+              revenus faibles ou vivant dans des pays pauvres comme le Liban
+              pourront etre financés.`;}
+}
+
+btndon.addEventListener('click',funcdon);
+
+
+
+
+
+
+
+
+
+
+
+
 
 //menu
 const items=document.querySelector('nav ul');

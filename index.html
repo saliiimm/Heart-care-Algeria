@@ -25,10 +25,12 @@
         </div>
         <div class="items">
           <ul>
-            <li class="nav-li"><a href="">Acceuil</a></li>
-            <li class="nav-li"><a href="">Comment ça marche?</a></li>
-            <li class="nav-li"><a href="">Maladies du coeur </a></li>
-            <li class="nav-li"><a href="">Prevention</a></li>
+            <li class="nav-li"><a href="#home">Acceuil</a></li>
+            <li class="nav-li">
+              <a href="#fonctionnement">Comment ça marche?</a>
+            </li>
+            <li class="nav-li"><a href="#maladies">Maladies du coeur </a></li>
+            <li class="nav-li"><a href="#prevention">Prevention</a></li>
           </ul>
         </div>
         <img
@@ -45,7 +47,7 @@
     </header>
 
     <main>
-      <section class="home">
+      <section class="home" id="home">
         <h1 class="effect">Chaque battement compte.</h1>
         <div class="scale-up">
           <div class="heart-rate">
@@ -96,7 +98,9 @@
               Pour comprendre le fonctionnement du cœur et le protéger des
               maladies cardio-vasculaires, une petite leçon d'anatomie s'impose.
             </p>
-            <button class="grid-button">Fonctionnement</button>
+            <button class="grid-button">
+              <a href="#fonctionnement"> Fonctionnement</a>
+            </button>
           </div>
           <div class="grid effect">
             <h2>Maladies</h2>
@@ -106,7 +110,9 @@
               personnes en raison de maladies cardio-vasculaires que de toute
               autre cause.
             </p>
-            <button class="grid-button">Maladies</button>
+            <button class="grid-button">
+              <a href="#maladies"> Maladies</a>
+            </button>
           </div>
           <div class="grid effect">
             <h2>Prevention</h2>
@@ -114,16 +120,18 @@
               De petits changements sains dans votre routine quotidienne peuvent
               diminuer le risque de maladie cardiaque.
             </p>
-            <button class="grid-button">Prevention</button>
+            <button class="grid-button">
+              <a href="#prevention">Prevention</a>
+            </button>
           </div>
           <div class="grid effect">
             <h2>Aide</h2>
             <p>Si vous avez besoin d'aide ou d'en savoir plus:</p>
-            <button class="grid-button">Aide</button>
+            <button class="grid-button"><a href="#aide"> Aide</a></button>
           </div>
         </div>
       </section>
-      <section class="fonctionnement">
+      <section class="fonctionnement" id="fonctionnement">
         <h2 class="titre-fonctionnement">Fonctionnement de notre Coeur</h2>
         <div class="cellule">
           <button type="button" class="collapsible">
@@ -229,7 +237,7 @@
           </div>
         </div>
       </section>
-      <section class="maladies">
+      <section class="maladies" id="maladies">
         <h2>Maladies cardiovasculaires</h2>
         <div class="grid-maladies">
           <div class="partie-maladie">
@@ -471,7 +479,7 @@
           </div>
         </div>
       </section>
-      <section class="prevention">
+      <section class="prevention" id="prevention">
         <h3>Prevention</h3>
         <div class="prevention-texte">
           <p class="debut">
@@ -594,7 +602,7 @@
           </div>
         </div>
       </section>
-      <section class="aide">
+      <section class="aide" id="aide">
         <div class="help-text">
           <p>
             Si vous voulez en savoir plus ou que vous voulez consulter un
@@ -633,19 +641,27 @@
         <!-- Modal content -->
         <div class="modal-content">
           <div class="modal-header">
-            <span class="close">&times;</span>
             <h2>Donner en ligne</h2>
+            <span class="close">&times;</span>
           </div>
           <div class="modal-body">
-            <h2>Merci infiniment pour votre don!</h2>
-            <p>
-              grace à vous,des operations du coeur pour personnes ayant des
-              revenus faibles ou vivant dans des pays pauvres comme le Liban
-              pourront etre financés
-            </p>
+            <label for="tbuser"
+              >Veuillez inserer le montant de votre don:</label
+            >
+            <input
+              type="text"
+              name="don"
+              id="tbuser"
+              placeholder="Montant du don en DA"
+              maxlength="20"
+              minlength="1"
+              required
+            />
+            <input type="button" value="Je donne" id="btndonne" />
+            <p class="output" id="output1"></p>
           </div>
           <div class="modal-footer">
-            <h2>votre geste nous fait chaud au</h2>
+            <h2>Votre geste nous fait chaud au</h2>
             <img
               src="./assets/images/icons8-coeur-médical-40.png"
               alt="coeur-qui-bat"
@@ -653,7 +669,6 @@
           </div>
         </div>
       </div>
-      <i class="fa-solid fa-arrow-down"></i>
     </main>
     <footer>
       <div class="footer-grid">
