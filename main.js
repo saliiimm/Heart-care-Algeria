@@ -35,7 +35,7 @@ phoneitem.classList.remove("sonnerie");
 //nav effect
 document.addEventListener("scroll",function (){
     let current = "";
-    if (scrollY >= 70) {
+    if (scrollY >= 70 && window.innerWidth>576) {
        nav.classList.add("active-nav");
        ul.classList.add("active");
     }
@@ -161,12 +161,21 @@ btndon.addEventListener('click',funcdon);
 //menu
 const items=document.querySelector('nav ul');
 const navbutton=document.querySelector('.menu');
+const itemli=document.querySelectorAll('.nav-li');
 const ligne1=document.querySelector('.ligne1');
 const ligne2=document.querySelector('.ligne2');
 const ligne3=document.querySelector('.ligne3');
+
 navbutton.addEventListener("click",function (){
     items.classList.toggle("active-ligne");
     ligne1.classList.toggle("active-ligne1");
     ligne2.classList.toggle("active-ligne2");
     ligne3.classList.toggle("active-ligne3");
 })
+for (i = 0; i < itemli.length; i++) {
+  itemli[i].addEventListener('click',function (){
+   items.classList.remove("active-ligne");
+    ligne1.classList.toggle("active-ligne1");
+    ligne2.classList.toggle("active-ligne2");
+    ligne3.classList.toggle("active-ligne3");
+})}

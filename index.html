@@ -15,6 +15,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="respo.css" />
   </head>
   <body>
     <header>
@@ -25,12 +26,16 @@
         </div>
         <div class="items">
           <ul>
-            <li class="nav-li"><a href="#home">Acceuil</a></li>
-            <li class="nav-li">
+            <li class="nav-li" id="lii"><a href="#home">Acceuil</a></li>
+            <li class="nav-li" id="lii">
               <a href="#fonctionnement">Comment ça marche?</a>
             </li>
-            <li class="nav-li"><a href="#maladies">Maladies du coeur </a></li>
-            <li class="nav-li"><a href="#prevention">Prevention</a></li>
+            <li class="nav-li" id="lii">
+              <a href="#maladies">Maladies du coeur </a>
+            </li>
+            <li class="nav-li" id="lii">
+              <a href="#prevention">Prevention</a>
+            </li>
           </ul>
         </div>
         <img
@@ -706,7 +711,7 @@
                         d="M64.9,28.5c0-5.5,3.8-9.5,9.3-9.5c1.9,0,3.8,0.4,5.1,1.5c1.9,1.3,3,3.4,3.2,5.7
 					h-5.3c-0.2-1.5-1.3-2.8-3.2-2.8c-2.5,0-3.8,2.1-3.8,5.1s1.5,5.1,3.8,5.1c1.9,0,3-1.3,3.2-3h5.5c-0.2,2.1-1.1,3.8-2.3,5.1
 					c-1.5,1.5-3.6,2.1-6.1,2.1C68.7,38,64.9,34,64.9,28.5z"
-                        style="fill: rgb(255, 255, 255)"
+                        style="fill: var(--secondary-color)"
                       ></path>
                       <path
                         id="XMLID_21_"
@@ -715,43 +720,43 @@
 					c-0.2,1.3-1.3,2.3-2.5,3.2c-1.3,0.8-2.5,1.1-4.2,1.1c-1.9,0-3.4-0.6-4.4-1.5c-1.1,1.1-2.5,1.7-4.7,1.7
 					C85.8,38,83.1,35,83.1,31.2z M92.4,31.2c0-2.1-0.8-3.6-2.3-3.6S88,29.1,88,31.2s0.6,3.6,2.1,3.6C91.8,34.8,92.4,33.3,92.4,31.2z
 					 M97,29.7h4.4c-0.2-1.5-1.1-2.3-2.1-2.3C97.9,27.4,97.3,28.2,97,29.7z"
-                        style="fill: rgb(255, 255, 255)"
+                        style="fill: var(--secondary-color)"
                       ></path>
                       <path
                         id="XMLID_18_"
                         d="M115.7,37.6v-1.7c-1.1,1.3-2.3,2.1-4,2.1c-3.2,0-4.7-2.1-4.7-5.1v-8.5h4.9v7.2
 					c0,1.3,0.6,2.1,1.7,2.1c1.3,0,1.9-0.8,1.9-2.3v-7h4.9v13.1L115.7,37.6L115.7,37.6z"
-                        style="fill: rgb(255, 255, 255)"
+                        style="fill: var(--secondary-color)"
                       ></path>
                       <path
                         id="XMLID_17_"
                         d="M126.3,26.6c1.1-1.7,2.3-2.3,4-2.3c0.4,0,0.6,0,0.8,0.2v4.2
 					c-2.8-0.4-4.4,0.8-4.4,3.8v5.3h-4.9V24.6h4.7v1.9h-0.2V26.6z"
-                        style="fill: rgb(255, 255, 255)"
+                        style="fill: var(--secondary-color)"
                       ></path>
                       <path
                         id="XMLID_16_"
                         d="M133.3,27h3.8v-4.2h4.4V27h4v4.2h-3.8v4.2H137v-4.2h-3.8V27H133.3z"
-                        style="fill: rgb(255, 255, 255)"
+                        style="fill: var(--secondary-color)"
                       ></path>
                       <path
                         id="XMLID_15_"
                         d="M153,19.4h5.5l6.8,18.4h-5.7l-0.8-2.8h-6.1l-0.8,2.8h-5.3L153,19.4L153,19.4z
 					 M153.6,31.2h3.8l-1.1-3.6c-0.2-0.8-0.6-2.3-0.6-2.3s-0.4,1.5-0.6,2.3L153.6,31.2L153.6,31.2z"
-                        style="fill: rgb(255, 255, 255)"
+                        style="fill: var(--secondary-color)"
                       ></path>
                       <path
                         id="XMLID_14_"
                         d="M162.5,19.4h5.5l2.5,8.7c0.4,1.5,0.8,3.6,0.8,3.6s0.4-1.9,0.8-3.6l2.5-8.7h5.5
 					l-5.9,18.4h-5.9L162.5,19.4L162.5,19.4z"
-                        style="fill: rgb(255, 255, 255)"
+                        style="fill: var(--secondary-color)"
                       ></path>
                       <path
                         id="XMLID_13_"
                         d="M179,28.5c0-5.5,3.8-9.5,9.3-9.5c1.9,0,3.8,0.4,5.1,1.5c1.9,1.3,3,3.4,3.2,5.7
 					h-5.3c-0.2-1.5-1.3-2.8-3.2-2.8c-2.5,0-3.8,2.1-3.8,5.1s1.5,5.1,3.8,5.1c1.9,0,3-1.3,3.2-3h5.5c-0.2,2.1-1.1,3.8-2.3,5.1
 					c-1.5,1.5-3.6,2.1-6.1,2.1C182.8,38,179,34,179,28.5z"
-                        style="fill: rgb(255, 255, 255)"
+                        style="fill: var(--secondary-color)"
                       ></path>
                     </g>
                     <g id="XMLID_5_">
@@ -760,14 +765,14 @@
                         d="M199.6,31.6h1.7l0.8,3c0.2,0.8,0.4,1.7,0.4,1.7s0.2-0.8,0.4-1.7l0.8-3h1.7v6.1
 					h-1.1v-3.4V33c0,0-0.2,0.6-0.2,1.1l-1.1,3.6h-1.3l-1.1-3.6c-0.2-0.4-0.2-1.1-0.2-1.1v4.7h-1.1C199.6,37.8,199.6,31.6,199.6,31.6
 					L199.6,31.6z"
-                        style="fill: rgb(255, 255, 255)"
+                        style="fill: var(--secondary-color)"
                       ></path>
                       <path
                         id="XMLID_8_"
                         d="M206.1,34.6c0-1.7,1.1-3.2,3-3.2c1.5,0,2.3,0.8,2.5,2.1h-1.3
 					c-0.2-0.6-0.6-1.1-1.3-1.1c-1.1,0-1.7,0.8-1.7,2.1s0.6,2.1,1.7,2.1c0.6,0,1.3-0.4,1.3-1.1h1.3c0,0.6-0.2,1.1-0.6,1.5
 					c-0.4,0.4-1.1,0.6-1.9,0.6C207.4,37.8,206.1,36.5,206.1,34.6z"
-                        style="fill: rgb(255, 255, 255)"
+                        style="fill: var(--secondary-color)"
                       ></path>
                     </g>
                   </g>

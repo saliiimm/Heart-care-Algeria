@@ -1,0 +1,1313 @@
+/*media query*/
+
+/*pc 1024px*/
+@media screen and (max-width: 1024px) {
+  nav ul {
+    margin-left: 0;
+    font-size: 17px;
+  }
+
+  /*maladies*/
+  .maladies {
+    width: 100%;
+    height: auto;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .partie-maladie {
+    height: auto;
+    background-color: var(--primary-color);
+    z-index: 2;
+    margin-bottom: 65px;
+  }
+  .titre1,
+  .titre2,
+  .titre3,
+  .titre4,
+  .titre5 {
+    width: 200px;
+    height: 45px;
+    z-index: 2;
+    position: sticky;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    border: none;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .titre4 {
+    width: 250px;
+  }
+  .titre5 {
+    width: 250px;
+    height: 90px;
+    font-size: 16px;
+  }
+  .grid-maladies {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: auto;
+    margin-right: 55px;
+    margin-top: 15px;
+  }
+  .texte-maladie {
+    width: 100%;
+    height: auto;
+    border-radius: 0 4px 4px 4px;
+  }
+
+  .texte-maladie5,
+  .texte-maladie4 {
+    height: auto;
+  }
+
+  .texte-maladie,
+  .texte-maladie2 > p,
+  ul,
+  h3 {
+    font-size: 12px;
+    word-spacing: 2px;
+  }
+  .texte-maladie5 p,
+  .texte-maladie5 ul {
+    font-size: 20px;
+  }
+  .texte-maladie4 p,
+  .texte-maladie4 ul,
+  .texte-maladie4 h3 {
+    font-size: 20px;
+  }
+  .intext,
+  .intext ul {
+    margin: 15px;
+    font-size: 20px;
+  }
+  .intext h3 {
+    font-size: 20px;
+  }
+  .intext ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .maladies-bonus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: rgb(81, 75, 75);
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  /*prevention*/
+  .grid-habitudes {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 260px);
+  }
+  .bonnes-habitudes {
+    display: grid;
+    place-items: center;
+  }
+  .bonnes-habitudes h3 {
+    font-size: 35px;
+    color: var(--tertiary-color);
+  }
+  .bonnes-habitudes p {
+    font-size: 25px;
+    max-width: 80%;
+  }
+  .prevention-facteurs li {
+    margin-bottom: 8px;
+  }
+  .grid-habitudes img {
+    width: 290px;
+  }
+  /*Aide*/
+  .aide {
+    height: 160px;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .help-text p {
+    color: var(--secondary-color);
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+  }
+
+  .help-buttons {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 250px);
+    width: 25px;
+    height: auto;
+    margin-top: 15px;
+  }
+  .aide span {
+    background-color: var(--tertiary-color);
+    color: white;
+    height: 55px;
+    width: 235px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  span i {
+    color: white;
+  }
+
+  .adresse {
+    font-size: 11px;
+    display: flex;
+    text-align: center;
+  }
+  .mail a {
+    font-size: 13px;
+  }
+  .aide span a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    margin: auto;
+  }
+
+  .aide span i {
+    margin: auto;
+  }
+  .aide span p {
+    margin: auto;
+    font-size: 10px;
+  }
+  .help-buttons span {
+    transition: all ease-in-out 0.3s;
+  }
+  .help-buttons span:hover {
+    transform: scale(1.1);
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+  }
+  .phone i:hover {
+    animation: sonne 0.05s infinite alternate;
+  }
+  .phone a {
+    font-size: 15px;
+  }
+  /*footer*/
+  footer {
+    height: auto;
+  }
+  footer img,
+  footer svg {
+    width: 200px;
+    height: 110px;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 70% 30%;
+  }
+  .partners {
+    display: grid;
+    align-items: center;
+    margin-left: 15px;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, auto);
+    color: var(--secondary-color);
+  }
+  .partners h2 {
+    color: var(--secondary-color);
+  }
+  .liens-utiles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .liens-utiles h2 {
+    color: var(--secondary-color);
+  }
+  /*.liens-utiles h2.light-mode {
+  color: black;
+}*/
+  .liens-utiles ul {
+    list-style-type: none;
+  }
+  .liens-utiles a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+    font-size: 15px;
+  }
+  .liens-utiles a:hover {
+    color: var(--secondary-color);
+    transform: scale(1.3);
+    transition: ease-in-out 0.2s;
+  }
+
+  footer h5 {
+    text-align: center;
+    justify-content: center;
+    color: grey;
+    font-size: 19px;
+    padding-bottom: 7px;
+  }
+  .modal {
+    display: none;
+    position: center;
+    z-index: 4;
+    padding: 50px;
+    left: 0;
+    top: 250px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .modal-content {
+    position: relative;
+    background-color: white;
+    margin: auto;
+    border: 1px solid #888;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    font-family: El Messiri;
+  }
+  @keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+  /* Modal Header */
+  .modal-header {
+    background-color: red;
+    color: white;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .modal-header h2 {
+    margin-left: 5px;
+    font-size: 20px;
+  }
+  /* Modal Body */
+  .modal-body {
+    background-color: white;
+    color: rgb(185, 14, 14);
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+  #btndonne {
+    list-style-type: none;
+    width: 70px;
+    height: 25px;
+    border: 2px solid red;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 5px;
+  }
+  #btndonne:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
+  }
+
+  #tbuser {
+    color: black;
+    border: 2px solid red;
+    height: 25px;
+    border-radius: 4px;
+  }
+  #output1 {
+    display: flex;
+    margin-left: 5px;
+    font-size: 14px;
+  }
+  /* Modal Footer */
+  .modal-footer {
+    background-color: red;
+    color: white;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal-footer h2 {
+    font-size: 18px;
+  }
+  .modal-footer img {
+    height: 28px;
+    margin-right: 5px;
+    animation: beat 0.3s infinite alternate;
+  }
+  @keyframes beat {
+    to {
+      transform: scale(1.2);
+    }
+  }
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: all ease-in-out 0.3s;
+    display: block;
+    position: static;
+    margin-right: 5px;
+    margin-top: -5px;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all ease-in-out 0.3s;
+  }
+}
+
+/*tablet*/
+@media screen and (max-width: 768px) {
+  nav ul {
+    margin-left: 0;
+    font-size: 13px;
+  }
+
+  /*home*/
+  .home {
+    height: auto;
+  }
+  .home h1 {
+    margin-top: 42px;
+    font-size: 36px;
+    color: var(--tertiary-color);
+  }
+  .home p {
+    color: var(--secondary-color);
+    margin-top: 35px;
+    max-width: 85%;
+    font-size: 18.6px;
+  }
+  .how-it-works p {
+    font-size: 19px;
+  }
+
+  /*maladies*/
+  .maladies {
+    width: 100%;
+    height: auto;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .partie-maladie {
+    height: auto;
+    background-color: var(--primary-color);
+    z-index: 2;
+    margin-bottom: 65px;
+  }
+  .titre1,
+  .titre2,
+  .titre3,
+  .titre4,
+  .titre5 {
+    width: 200px;
+    height: 45px;
+    z-index: 2;
+    position: sticky;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    border: none;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .titre4 {
+    width: 250px;
+  }
+  .titre5 {
+    width: 250px;
+    height: 90px;
+    font-size: 14px;
+  }
+  .grid-maladies {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: auto;
+    margin-right: 55px;
+    margin-top: 15px;
+  }
+  .texte-maladie {
+    width: 100%;
+    height: auto;
+    border-radius: 0 4px 4px 4px;
+  }
+
+  .texte-maladie5,
+  .texte-maladie4 {
+    height: auto;
+  }
+
+  .texte-maladie,
+  .texte-maladie2 > p,
+  ul,
+  h3 {
+    font-size: 12px;
+    word-spacing: 2px;
+  }
+  .texte-maladie5 p,
+  .texte-maladie5 ul {
+    font-size: 20px;
+  }
+  .texte-maladie4 p,
+  .texte-maladie4 ul,
+  .texte-maladie4 h3 {
+    font-size: 20px;
+  }
+  .intext,
+  .intext ul {
+    margin: 15px;
+    font-size: 20px;
+  }
+  .intext h3 {
+    font-size: 20px;
+  }
+  .intext ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .maladies-bonus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: rgb(81, 75, 75);
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  /*prevention*/
+  .grid-habitudes {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 260px);
+  }
+  .bonnes-habitudes {
+    display: grid;
+    place-items: center;
+  }
+  .bonnes-habitudes h3 {
+    font-size: 35px;
+    color: var(--tertiary-color);
+  }
+  .bonnes-habitudes p {
+    font-size: 25px;
+    max-width: 80%;
+  }
+  .prevention-facteurs li {
+    margin-bottom: 8px;
+  }
+  .grid-habitudes img {
+    width: 290px;
+  }
+  /*Aide*/
+  .aide {
+    height: 160px;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .help-text p {
+    color: var(--secondary-color);
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+  }
+
+  .help-buttons {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 250px);
+    width: 25px;
+    height: auto;
+    margin-top: 15px;
+  }
+  .aide span {
+    background-color: var(--tertiary-color);
+    color: white;
+    height: 55px;
+    width: 235px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  span i {
+    color: white;
+  }
+
+  .adresse {
+    font-size: 11px;
+    display: flex;
+    text-align: center;
+  }
+  .mail a {
+    font-size: 13px;
+  }
+  .aide span a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    margin: auto;
+  }
+
+  .aide span i {
+    margin: auto;
+  }
+  .aide span p {
+    margin: auto;
+    font-size: 10px;
+  }
+  .help-buttons span {
+    transition: all ease-in-out 0.3s;
+  }
+  .help-buttons span:hover {
+    transform: scale(1.1);
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+  }
+  .phone i:hover {
+    animation: sonne 0.05s infinite alternate;
+  }
+  .phone a {
+    font-size: 15px;
+  }
+  /*footer*/
+  footer {
+    height: auto;
+  }
+  footer img,
+  footer svg {
+    width: 200px;
+    height: 110px;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 70% 30%;
+  }
+  .partners {
+    display: grid;
+    align-items: center;
+    margin-left: 15px;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, auto);
+    color: var(--secondary-color);
+  }
+  .partners h2 {
+    color: var(--secondary-color);
+  }
+  .liens-utiles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .liens-utiles h2 {
+    color: var(--secondary-color);
+  }
+  /*.liens-utiles h2.light-mode {
+  color: black;
+}*/
+  .liens-utiles ul {
+    list-style-type: none;
+  }
+  .liens-utiles a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+    font-size: 15px;
+  }
+  .liens-utiles a:hover {
+    color: var(--secondary-color);
+    transform: scale(1.3);
+    transition: ease-in-out 0.2s;
+  }
+
+  footer h5 {
+    text-align: center;
+    justify-content: center;
+    color: grey;
+    font-size: 19px;
+    padding-bottom: 7px;
+  }
+  .modal {
+    display: none;
+    position: center;
+    z-index: 4;
+    padding: 50px;
+    left: 0;
+    top: 250px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .modal-content {
+    position: relative;
+    background-color: white;
+    margin: auto;
+    border: 1px solid #888;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    font-family: El Messiri;
+  }
+  @keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+  /* Modal Header */
+  .modal-header {
+    background-color: red;
+    color: white;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .modal-header h2 {
+    margin-left: 5px;
+    font-size: 20px;
+  }
+  /* Modal Body */
+  .modal-body {
+    background-color: white;
+    color: rgb(185, 14, 14);
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+  #btndonne {
+    list-style-type: none;
+    width: 70px;
+    height: 25px;
+    border: 2px solid red;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 5px;
+  }
+  #btndonne:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
+  }
+
+  #tbuser {
+    color: black;
+    border: 2px solid red;
+    height: 25px;
+    border-radius: 4px;
+  }
+  #output1 {
+    display: flex;
+    margin-left: 5px;
+    font-size: 14px;
+  }
+  /* Modal Footer */
+  .modal-footer {
+    background-color: red;
+    color: white;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal-footer h2 {
+    font-size: 18px;
+  }
+  .modal-footer img {
+    height: 28px;
+    margin-right: 5px;
+    animation: beat 0.3s infinite alternate;
+  }
+  @keyframes beat {
+    to {
+      transform: scale(1.2);
+    }
+  }
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: all ease-in-out 0.3s;
+    display: block;
+    position: static;
+    margin-right: 5px;
+    margin-top: -5px;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all ease-in-out 0.3s;
+  }
+}
+
+/*phone*/
+@media screen and (max-width: 576px) {
+  /*nav*/
+  .menu {
+    display: block;
+  }
+  nav ul {
+    flex-direction: column;
+    height: calc(100vh - 60px);
+    position: fixed;
+    top: 60px;
+    right: 0.1px;
+    width: 100vw;
+    background-color: var(--primary-color);
+    transform: translateX(100%);
+    transition: 0.5s;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  nav li a {
+    color: var(--secondary-color);
+  }
+  .active-ligne {
+    transform: translateX(0);
+    transition: 0.5s;
+  }
+  .active-ligne1 {
+    position: fixed;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+  }
+  .active-ligne2 {
+    transform: rotate(45deg);
+    transition: 0.5s;
+  }
+  .active-ligne3 {
+    display: none;
+  }
+
+  /*home*/
+  .home {
+    height: auto;
+  }
+  .home h1 {
+    margin-top: 42px;
+    font-size: 36px;
+    color: var(--tertiary-color);
+  }
+  .home p {
+    color: var(--secondary-color);
+    margin-top: 35px;
+    max-width: 85%;
+    font-size: 18.6px;
+  }
+
+  /*how-it-works*/
+  .how-it-works {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+  }
+
+  .how-it-works p {
+    font-size: 20px;
+    max-width: 40%;
+  }
+  .grid-how-it-works {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+  }
+  .grid {
+    height: 385px;
+  }
+  .grid h2 {
+    height: 20%;
+    font-size: 22px;
+  }
+  .grid p {
+    font-size: 14px;
+    max-width: 90%;
+  }
+
+  .grid-button {
+    width: 150px;
+  }
+  /*fonctionnement*/
+  .composants img {
+    width: 350px;
+  }
+  /*maladies*/
+  .maladies {
+    width: 100%;
+    height: auto;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .partie-maladie {
+    height: auto;
+    background-color: var(--primary-color);
+    z-index: 2;
+    margin-bottom: 65px;
+  }
+
+  .titre1,
+  .titre2,
+  .titre3,
+  .titre4,
+  .titre5 {
+    width: 200px;
+    height: 45px;
+    z-index: 2;
+    position: sticky;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    border: none;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .titre4 {
+    width: 250px;
+  }
+  .titre5 {
+    width: 250px;
+    height: 90px;
+    font-size: 14px;
+  }
+  .grid-maladies {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: auto;
+    margin-right: 55px;
+    margin-top: 15px;
+  }
+  .texte-maladie {
+    width: 100%;
+    height: auto;
+    border-radius: 0 4px 4px 4px;
+  }
+
+  .texte-maladie5,
+  .texte-maladie4 {
+    height: auto;
+  }
+  .texte-maladie,
+  .texte-maladie2 > p,
+  ul,
+  h3 {
+    font-size: 12px;
+    word-spacing: 2px;
+  }
+  .texte-maladie5 p,
+  .texte-maladie5 ul {
+    font-size: 22px;
+  }
+  .texte-maladie4 p,
+  .texte-maladie4 ul {
+    font-size: 22px;
+  }
+
+  .intext {
+    margin: 15px;
+  }
+  .maladies-bonus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: rgb(81, 75, 75);
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+  /*prevention*/
+  .grid-habitudes {
+    display: grid;
+    grid-template-columns: repeat(2, max-width);
+    grid-template-rows: repeat(3, auto);
+  }
+  .bonnes-habitudes {
+    display: grid;
+    place-items: center;
+  }
+  .bonnes-habitudes h3 {
+    font-size: 25px;
+    color: var(--tertiary-color);
+  }
+  .bonnes-habitudes p {
+    font-size: 15px;
+    max-width: 80%;
+  }
+  .prevention-facteurs li {
+    margin-bottom: 8px;
+  }
+  .grid-habitudes img {
+    width: 150px;
+  }
+
+  /*Aide*/
+  .aide {
+    height: 160px;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .help-text p {
+    color: var(--secondary-color);
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+  }
+
+  .help-buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    height: 300px;
+    margin-top: 15px;
+  }
+  .aide span {
+    background-color: var(--tertiary-color);
+    color: white;
+    height: 55px;
+    width: 235px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  span i {
+    color: white;
+  }
+
+  .adresse {
+    font-size: 11px;
+    display: flex;
+    text-align: center;
+  }
+  .mail a {
+    font-size: 13px;
+  }
+  .aide span a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    margin: auto;
+  }
+
+  .aide span i {
+    margin: auto;
+  }
+  .aide span p {
+    margin: auto;
+    font-size: 10px;
+  }
+  .help-buttons span {
+    transition: all ease-in-out 0.3s;
+  }
+  .help-buttons span:hover {
+    transform: scale(1.1);
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+  }
+  .phone i:hover {
+    animation: sonne 0.05s infinite alternate;
+  }
+  .phone a {
+    font-size: 15px;
+  }
+
+  /*footer*/
+  footer {
+    height: auto;
+    margin-top: 250px;
+  }
+  footer img,
+  footer svg {
+    width: 145px;
+    height: 75px;
+
+    cursor: pointer;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 65% 35%;
+  }
+  .partners {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--secondary-color);
+  }
+  .partners h2 {
+    color: var(--secondary-color);
+    max-width: 70%;
+  }
+  .liens-utiles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .liens-utiles h2 {
+    color: var(--secondary-color);
+  }
+  /*.liens-utiles h2.light-mode {
+  color: black;
+}*/
+  .liens-utiles ul {
+    list-style-type: none;
+  }
+  .liens-utiles a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+    font-size: 15px;
+  }
+  .liens-utiles a:hover {
+    color: var(--secondary-color);
+    transform: scale(1.3);
+    transition: ease-in-out 0.2s;
+  }
+
+  footer h5 {
+    text-align: center;
+    justify-content: center;
+    color: grey;
+    font-size: 19px;
+    padding-bottom: 7px;
+  }
+  /*bouton don*/
+  .donate {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    z-index: 4;
+  }
+  .donate img {
+    width: 30px;
+  }
+  #mybutton {
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+  }
+  #scroll-up {
+    position: fixed;
+    bottom: 66px;
+    right: 15px;
+    z-index: 5;
+  }
+
+  .modal {
+    display: none;
+    position: center;
+    z-index: 4;
+    padding: 50px;
+    left: 0;
+    top: 250px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .modal-content {
+    position: relative;
+    background-color: white;
+    margin: auto;
+    border: 1px solid #888;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    font-family: El Messiri;
+  }
+  @keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+  /* Modal Header */
+  .modal-header {
+    background-color: red;
+    color: white;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .modal-header h2 {
+    margin-left: 5px;
+    font-size: 20px;
+  }
+  /* Modal Body */
+  .modal-body {
+    background-color: white;
+    color: rgb(185, 14, 14);
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+  #btndonne {
+    list-style-type: none;
+    width: 70px;
+    height: 25px;
+    border: 2px solid red;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 5px;
+  }
+  #btndonne:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
+  }
+
+  #tbuser {
+    color: black;
+    border: 2px solid red;
+    height: 25px;
+    border-radius: 4px;
+  }
+  #output1 {
+    display: flex;
+    margin-left: 5px;
+    font-size: 14px;
+  }
+  /* Modal Footer */
+  .modal-footer {
+    background-color: red;
+    color: white;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal-footer h2 {
+    font-size: 18px;
+  }
+  .modal-footer img {
+    height: 28px;
+    margin-right: 5px;
+    animation: beat 0.3s infinite alternate;
+  }
+  @keyframes beat {
+    to {
+      transform: scale(1.2);
+    }
+  }
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: all ease-in-out 0.3s;
+    display: block;
+    position: static;
+    margin-right: 5px;
+    margin-top: -5px;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all ease-in-out 0.3s;
+  }
+}
