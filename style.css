@@ -163,7 +163,10 @@ nav img:hover {
   position: relative;
   margin: 20px auto;
 }
-
+.button span a {
+  text-decoration: none;
+  color: var(--tertiary-color);
+}
 .fade-in {
   position: absolute;
   width: 100%;
